@@ -326,12 +326,18 @@ h1 {
   gap: 30px;
 }
 @media (max-width: 1024px) {
+  
   .main__hero-description {
     padding-right: 0;
   }
 }
 
 @media (max-width: 768px) {
+  body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
   .main__hero-wrapper {
     padding-top: 500px;
     background-position: 50% 0;
@@ -436,8 +442,8 @@ h1 {
 }
 .footer__logo {
   display: flex;
-  width: 600px;
-  height: 80px;
+  width: 700px;
+  height: 75px;
   align-content: center;
   justify-content: center;
 }
