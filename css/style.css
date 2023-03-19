@@ -326,7 +326,6 @@ h1 {
   gap: 30px;
 }
 @media (max-width: 1024px) {
-  
   .main__hero-description {
     padding-right: 0;
   }
@@ -378,14 +377,14 @@ h1 {
     width: 100%;
     text-align: center;
   }
-.main__hero-action{
-  padding: 25px 32px;
-  background-color: var(--color-primary);
-  border-radius: 20px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-}
+  .main__hero-action {
+    padding: 25px 32px;
+    background-color: var(--color-primary);
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+  }
   .main__features-search {
     align-items: stretch;
     flex-direction: column;
@@ -423,43 +422,39 @@ h1 {
     left: calc(50% - 2.5px);
   }
 
-.footer {
-  position: relative;
-  margin-left: 0;
-  margin-right: 0;
-  display: block;
-  background-color: #232027;
-  padding: 40px 35px;
-  height: 500px;
-}
-.lists__footer {
-  padding-top: 100px;
-  display: flex;
-  margin-left: 0;
-  list-style-type: none;
-  gap: 50px;
-  
-}
-.footer__logo {
-  display: flex;
-  width: 700px;
-  height: 75px;
-  align-content: center;
-  justify-content: center;
-}
-.footer__logo img {
-  display: flex;
-  width: 250px;
-}}
-@media (max-width: 480px) {
-  body footer{
-    padding: 2rem;
-    margin: 2rem;
-    box-sizing: border-box;
+  .footer {
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+    display: block;
+    background-color: #232027;
+    padding: 40px 35px;
+    height: 500px;
   }
+  .lists__footer {
+    padding-top: 100px;
+    display: flex;
+    margin-left: 0;
+    list-style-type: none;
+    gap: 50px;
+  }
+  .footer__logo {
+    display: flex;
+    width: 700px;
+    height: 75px;
+    align-content: center;
+    justify-content: center;
+  }
+  .footer__logo img {
+    display: flex;
+    width: 250px;
+  }
+}
+@media (max-width: 480px) {
+
   .header {
     display: flex;
-    justify-content: c:\Users\jesus\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\code\electron-sandbox\workbench\workbench.htmlcenter;
+    justify-content: center;
     padding-left: 2rem;
     padding-right: 2rem;
     padding-top: 4rem;
@@ -524,22 +519,28 @@ h1 {
     color: #fafafa;
   }
   .footer {
-    width: 480px ;
-    height: 700px;
+    display: flex;
+    justify-content: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 4rem;
+
+    /* padding-left: 2rem;
+    padding-right: 2rem; */
+    position: absolute;
+    width: auto;
+    height: auto;
     display: block;
     background-color: #232027;
   }
   .footer__logo {
-    width: 410px;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-  }
-  .footer__logo img {
-    width: 150px;
+    width: 352px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
     height: 80;
-    display: inline-block;
   }
+
   .lists__footer {
     padding-top: 15px;
     display: block;
