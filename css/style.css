@@ -452,11 +452,11 @@ h1 {
   width: 250px;
 }}
 @media (max-width: 480px) {
-  /* body {
-    padding: 0;
-    margin: 0;
+  body {
+    padding: 2rem;
+    margin: 2rem;
     box-sizing: border-box;
-  } */
+  }
   .header {
     display: flex;
     justify-content: center;
