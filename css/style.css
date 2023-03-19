@@ -452,14 +452,14 @@ h1 {
   width: 250px;
 }}
 @media (max-width: 480px) {
-  body {
+  body footer{
     padding: 2rem;
     margin: 2rem;
     box-sizing: border-box;
   }
   .header {
     display: flex;
-    justify-content: center;
+    justify-content: c:\Users\jesus\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\code\electron-sandbox\workbench\workbench.htmlcenter;
     padding-left: 2rem;
     padding-right: 2rem;
     padding-top: 4rem;
