@@ -303,7 +303,7 @@ h1 {
 .lists__footer {
   padding-top: 30px;
   display: flex;
-  margin-left: 700px;
+  margin-left: 300px;
   list-style-type: none;
   gap: 50px;
 }
@@ -323,6 +323,7 @@ h1 {
   display: flex;
   width: 250px;
   height: 75px;
+  padding-left: 150px;
   align-content: center;
   justify-content: center;
 }
@@ -341,15 +342,14 @@ h1 {
   }
   .footer__logo {
     display: flex;
-    width: 700px;
+    width: auto;
     height: 75px;
-    align-content: center;
-    justify-content: center;
+    padding: 0;
   }
   .lists__footer {
     padding-top: 30px;
     display: flex;
-    margin-left: 120px;
+    margin-left: 100px;
     list-style-type: none;
     gap: 50px;
     font-size: 10px;
@@ -366,11 +366,6 @@ h1 {
 }
 
 @media (max-width: 768px) {
-  /* body {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  } */
   .main__hero-wrapper {
     padding-top: 500px;
     background-position: 50% 0;
@@ -463,10 +458,10 @@ h1 {
     display: block;
     background-color: #232027;
     padding: 40px 35px;
-    height: 500px;
+    height: auto;
   }
   .lists__footer {
-    padding-top: 100px;
+    padding-top: 50px;
     display: flex;
     margin-left: 0;
     list-style-type: none;
@@ -490,8 +485,8 @@ h1 {
   .header {
     display: flex;
     justify-content: center;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
     padding-top: 1rem;
   }
   .main__hero-wrapper {
@@ -576,14 +571,68 @@ h1 {
     padding-top: 15px;
     display: block;
     text-align: center;
-    margin-left: 0px;
+    /* margin-left: 0px; */
     list-style-type: none;
     margin-right: 0px;
+    margin-left: 200px;
     gap: 50px;
   }
   .list__title {
     padding-top: 10px;
     padding-bottom: 20px;
+
+    text-decoration: solid;
+    color: #fafafa;
+    text-align: center;
+  }
+  .icons__footer {
+    padding-top: 30px;
+    justify-content: center;
+    cursor: pointer;
+    gap: 30px;
+  }
+}
+@media (max-width: 425px) {
+  .header {
+    display: flex;
+    justify-content: center;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    padding-top: 1rem;
+  }
+  .footer {
+    padding-left: auto;
+    padding-right: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 4rem;
+    position: absolute;
+    width: 361px;
+    height: auto;
+    background-color: #232027;
+  }
+  .footer__logo {
+    width: auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 80;
+  }
+
+  .lists__footer {
+    padding-top: 15px;
+    display: block;
+    text-align: center;
+ 
+    list-style-type: none;
+    margin-right: 0px;
+    margin-left: 0px;
+    gap: 50px;
+  }
+  .list__title {
+    padding-top: 10px;
+    padding-bottom: 20px;
+
     text-decoration: solid;
     color: #fafafa;
     text-align: center;
@@ -596,14 +645,22 @@ h1 {
   }
 }
 @media (max-width: 375px) {
-  .h1 {
-    text-size-adjust: 10px;
-    text-align: justify;
-    padding-top: 0;
-  }
   .header {
     padding: 0px;
   }
+  /* .main__hero-title {
+    border-color: 1px aqua;
+    padding-top: 0;
+    padding-bottom: 100;
+  } */
+  h1 {
+    width: auto;
+    font-size: 70px;
+    text-align: center;
+    padding: 0;
+    line-height: 65px;
+  }
+
   .footer {
     padding-left: auto;
     padding-right: auto;
@@ -645,5 +702,51 @@ h1 {
     justify-content: center;
     cursor: pointer;
     gap: 30px;
+  }
+}
+@media (max-width: 320px) {
+  .header {
+    padding: 0px;
+  }
+  .main__hero-title {
+    border-color: 1px aqua;
+    padding-top: 0;
+  }
+  h1 {
+    width: auto;
+    font-size: 50px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    line-height: 65px;
+  }
+  .main__hero-wrapper {
+    background-image: url("./../images/illustration-working.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 5%;
+    background-size: 100%;
+    padding-bottom: 10px;
+  }
+  .footer {
+    padding-left: auto;
+    padding-right: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2rem;
+    position: absolute;
+    width: auto;
+    height: auto;
+    background-color: #232027;
+  }
+  .footer__logo {
+    width: 180px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 40;
+  }
+  .footer__logo img{
+    width: 130px;
+    height: 60px;
   }
 }
