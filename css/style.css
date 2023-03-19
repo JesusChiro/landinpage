@@ -303,7 +303,7 @@ h1 {
 .lists__footer {
   padding-top: 30px;
   display: flex;
-  margin-left: 400px;
+  margin-left: 700px;
   list-style-type: none;
   gap: 50px;
 }
@@ -319,7 +319,17 @@ h1 {
   text-decoration: solid;
   color: #fafafa;
 }
-
+.footer__logo {
+  display: flex;
+  width: 250px;
+  height: 75px;
+  align-content: center;
+  justify-content: center;
+}
+.footer__logo img {
+  display: flex;
+  width: 250px;
+}
 .icons__footer {
   display: flex;
   cursor: pointer;
@@ -328,6 +338,30 @@ h1 {
 @media (max-width: 1024px) {
   .main__hero-description {
     padding-right: 0;
+  }
+  .footer__logo {
+    display: flex;
+    width: 700px;
+    height: 75px;
+    align-content: center;
+    justify-content: center;
+  }
+  .lists__footer {
+    padding-top: 30px;
+    display: flex;
+    margin-left: 120px;
+    list-style-type: none;
+    gap: 50px;
+    font-size: 10px;
+  }
+  .footer__logo img {
+    display: flex;
+    width: 250px;
+  }
+  .icons__footer {
+    display: flex;
+    cursor: pointer;
+    gap: 30px;
   }
 }
 
@@ -437,13 +471,15 @@ h1 {
     margin-left: 0;
     list-style-type: none;
     gap: 50px;
+    font-size: 18px;
   }
+
   .footer__logo {
+    width: auto;
     display: flex;
-    width: 700px;
-    height: 75px;
     align-content: center;
     justify-content: center;
+    height: 80;
   }
   .footer__logo img {
     display: flex;
@@ -522,21 +558,14 @@ h1 {
     padding-right: auto;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 4rem; 
-    /* display: flex;
-    justify-content: center; */
-
-   
-   position: absolute;
-   width: 361px;
-     height: auto;
-    /* display: block; */
+    padding-top: 4rem;
+    position: absolute;
+    width: 361px;
+    height: auto;
     background-color: #232027;
   }
   .footer__logo {
     width: auto;
-    /* padding-left: 1rem;
-    padding-right: 1rem; */
     display: flex;
     align-content: center;
     justify-content: center;
@@ -551,7 +580,58 @@ h1 {
     list-style-type: none;
     margin-right: 0px;
     gap: 50px;
-   
+  }
+  .list__title {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-decoration: solid;
+    color: #fafafa;
+    text-align: center;
+  }
+  .icons__footer {
+    padding-top: 30px;
+    justify-content: center;
+    cursor: pointer;
+    gap: 30px;
+  }
+}
+@media (max-width: 375px) {
+  .h1 {
+    text-size-adjust: 10px;
+    text-align: justify;
+    padding-top: 0;
+  }
+  .header {
+    padding: 0px;
+  }
+  .footer {
+    padding-left: auto;
+    padding-right: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 4rem;
+    position: absolute;
+    width: 311px;
+    height: auto;
+    background-color: #232027;
+  }
+  .footer__logo {
+    width: auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 80;
+  }
+
+  .lists__footer {
+    padding-top: 15px;
+    display: block;
+    text-align: center;
+    margin-left: 0px;
+    list-style-type: none;
+    margin-right: 0px;
+    gap: 50px;
+    font-size: 15px;
   }
   .list__title {
     padding-top: 10px;
